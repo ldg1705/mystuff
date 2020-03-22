@@ -1,0 +1,201 @@
+<html>
+<head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="icon" href="https://cdn2.vectorstock.com/i/1000x1000/27/01/food-delivery-logo-design-with-retro-scooter-vector-22912701.jpg" type="image/x-icon" >
+      <title>D.H.E.</title>
+      <style>
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+#page{
+  margin-left: 11cm;
+  margin-top: 3cm;
+}
+
+@media screen (max-width: 400px) {
+  ul.nav li a {
+    text-align: center;
+    float: none;
+  }
+}
+
+ul {
+  list-style-type: none;
+  margin-left: 8cm;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 12cm;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+li {
+  float:left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover{
+  background: tomato;
+  color: yellow;
+  transform: scale(1.1);
+}
+
+img{
+  height:2cm;
+  width:2cm;
+}
+
+body {
+  background-image: linear-gradient(rgba(211,211,211, 0.6 ),rgba(245, 96, 66, 0.7)), url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/pizza-pizza-1505216305.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family:sans-serif;
+}
+
+#form{
+display: flex;
+flex-direction: column;
+width: 8cm;
+margin-top: 2cm;
+}
+
+#submit{
+  margin-top: 0.5cm;
+  width:2cm;
+  height:0.8cm;
+  background: orange,
+  color:black;
+font-size: 15px;
+border-radius:10px;
+}
+
+.logo {
+  margin-bottom: 3cm;
+  width: 2cm;
+  height: 2cm;
+  float: left;
+  color: #fff;
+}
+
+.alacarte{
+  display: flex;
+  flex-direction: column;
+    margin-top: 1cm;
+    width:5cm;
+    height:9cm;
+    border: 2px solid black;
+    text-align: left;
+    text-decoration: none;
+}
+
+.deals{
+  display: flex;
+  flex-direction: column;
+  margin-top: 1cm;
+  width:5cm;
+  height:9cm;
+  border: 2px solid black;
+  text-align: left;
+  text-decoration: none;
+  margin-left:5px;
+}
+
+.menus{
+  display: flex;
+  flex-direction: row;
+}
+
+ol{
+  list-style-type: none;
+}
+      </style>
+</head>
+<body>
+ <header id="header">
+  <nav id="nav-bar">
+
+  <div class="logo">
+
+</div>
+
+
+<ul>
+  <img src="https://dynamic.brandcrowd.com/asset/logo/1f90286e-473d-45bd-8224-cbf336e68aaa/logo?v=4"
+alt="company logo" id="#header-img">
+  <li><a class="nav-link" href="#home">Home    </a></li>
+  <li><a class="nav-link" href="#menus">Menus & Deals </a></li>
+  <li><a class="nav-link" href="#form">Form</a></li>
+</ul>
+    </nav>
+  </header>
+  <div id="page">
+  <section id="home">
+  <h2> Delivering High Expectations </h2>
+    <iframe id="video"
+      height="315" src="https://www.youtube.com/embed/yuUmkOKXBvQ" frameborder="0"  allowfullscreen></iframe>
+        </section>
+
+<section id="menus">
+  <div class="menus">
+  <div class="alacarte">
+   <h2>A la carte</h2>
+   <ol>
+     <li><br>Pizza margherita £10 (Vegetarian)</li>
+     <li><br>Pizza Diavola £13 (Spicy)</li>
+     <li><br>Coca-Cola £2 - 1 botte 750 ml</li>
+     <li><br>Fanta £2 - 1 botte 750 ml</li>
+   </ol>
+</div>
+   <div class="deals">
+    <h2>Deals and Promotions</h2>
+    <ol>
+      <li><br>Pizza + 1 beverage £12</li>
+      <li><br>Pizza + Side + 1 beverage £14</li>
+      <li><br>Group promotion (3/4 people) .......</li>
+      <li><br>Group promotion (5/6 people) .......</li>
+    </ol>
+ </div>
+ </div>
+</section>
+
+        <section id="form">
+      <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <label id="email-label" for="e-mail"><strong>Email</strong></label>
+      <input
+        name="email"
+        id="email"
+        type="email"
+        placeholder="Enter your email address"
+        required
+      />
+      <label id="postcode" for="number"><strong>Enter your Postcode</strong></label>
+      <input
+        name="postcode"
+        id="postcode"
+        type="string"
+        placeholder="Enter your postcode"
+        required
+      />
+
+           <input id="submit" type="submit" value="Submit" class="btn" />
+    </form>
+</section>
+    </div>
+</body>
+</html>
