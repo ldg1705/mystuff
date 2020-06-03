@@ -1,0 +1,97 @@
+* {
+  margin:0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  font-family: Calibri, sans-serif;
+}
+
+body{
+  background-image: url("https://images.pexels.com/photos/1562/italian-landscape-mountains-nature.jpg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+
+nav {
+  background-color: rgb(147, 188, 217, 0.2);
+  border-radius: 20px;
+  width:96vw;
+  box-shadow: 0 2px 5px;
+  margin:1vh 0 0 2vw;
+}
+
+.style li {
+  color:rgb(255, 255, 255, 0.8) ;
+  font-size:2.5vh;
+  margin-left: 2.5vw;
+  position:relative;
+  font-weight: bolder;
+  -webkit-text-stroke: 0.6px black;
+  -moz-text-stroke: 0.6px black;
+  -ms-text-stroke: 0.6px black;
+}
+
+.style a {
+  letter-spacing: 1px;
+}
+
+.style li.active {
+  background: linear-gradient(to bottom right,rgb(147, 188, 217, 0.1), rgb(102, 255, 255, 0.2),rgb(102, 153, 0, 0.4));
+  transform: scale(1.1);
+  border-radius: 15px;
+}
+
+ .style li:hover {
+   background-color: rgb(147, 188, 217, 0.4);
+   color: rgb(255, 255, 255, 1);
+   transform: scale(1.1);
+   border-radius: 15px;
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+.burger div{
+  width:30px;
+  height:5px;
+  background-color: white;
+  margin: 5px;
+  position:relative;
+  top:0;
+  transition: all ease-in-out 0.4s;
+  border:0.4px solid black;
+}
+
+
+@media screen and (max-width: 600px){
+  .burger {
+    display: block;
+  }
+
+   .style li {
+     display:none;
+
+   }
+
+.burger.open div:nth-child(2) {
+  width:0;
+  opacity:0;
+}
+
+.burger.open div:nth-child(3) {
+  transform: rotate(45deg);
+  top:-10px;
+  border:0.4px solid black;
+}
+
+.burger.open div:nth-child(1) {
+  transform: rotate(-45deg);
+  top:10px;
+  border:0.4px solid black;
+}
+
+ }
