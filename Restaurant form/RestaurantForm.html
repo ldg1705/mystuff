@@ -1,0 +1,69 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./RestaurantForm.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+</head>
+
+<body>
+  <div class="container-fluid">
+    <h2 class="text-center">Dietary requirement form </h2>
+
+    <form>
+   <h5 class="description">Please fill this form so that we accommodate accordingly any requirement </h5>
+
+<div class="form-group ">
+<label for="name">Name: </label>
+  <input name="name" type="text" placeholder="Enter your name" required>
+</div>
+
+
+<div class="form-group ">
+<label for="e-mail">Email: </label>
+  <input name="email" type="email"  placeholder="Enter your e-mail" required>
+</div>
+
+
+<div class="form-group" id="nop">
+<label for="number"> Number of people: </label>
+  <input type="number" name="nop" min="1" max="15" placeholder="Enter number of people" required>
+</div>
+
+<div class="form-group" id="phone">
+<label for="number"> Phone Number: </label>
+  <input type="tel" name="phone" placeholder="Enter phone number" required>
+</div>
+
+
+<h5 class="description">Choose within one of our set-menus</h5>
+
+<div class="form-group">
+     <select name="set-menus" required>
+       <option disabled selected >Select an option</option>
+       <option>Set-Menu £30</option>
+       <option>Set-Menu £35</option>
+       <option>Set-Menu £40</option>
+     </select>
+</div>
+
+<h5 class="description">Please tick one or more boxes below if any of the listed dietary requirements</h5>
+<div class="d-flex justify-content-around form-group">
+    <label ><input value="Vegetarian" type="checkbox"> Vegetarian </label>
+    <label ><input value="Vegan" type="checkbox"> Vegan  </label>
+    <label ><input value="Gluten Free" type="checkbox"> Gluten Free  </label>
+    <label ><input value="Dairy Free" type="checkbox"> Dairy Free</label>
+    <label ><input value="Pescatarian" type="checkbox"> Pescatarian</label>
+</div>
+
+<h5 class="description">Any allergy , other dietarary requirements or comments?</h5>
+<div class="form-group">
+        <textarea class="input-textarea" name="comment" placeholder="Enter your specification here..."></textarea>
+</div>
+
+       <button type="submit" class="btn btn-success btn-sm ">Submit</button>
+       <button type="reset" class="btn btn-danger btn-sm ">Reset</button>
+</form>
+    </div>
+      </body>
+</html>
